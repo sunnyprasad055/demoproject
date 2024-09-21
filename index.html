@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }
+       .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* margin: 70px ; */
+        margin-top: 20%;
+        text-align: center;
+        gap: 10px;
+        flex-wrap: wrap;
+
+       }
+
+       .containerChilds1 {
+        flex: 1;
+        height: 40%;
+        background-color: rgb(55, 139, 213);
+
+       }
+       .containerChilds2 {
+        flex: 4;
+        height: 20%;
+        background-color: aquamarine;
+       }
+       .containerChilds3 {
+        flex: 1;
+        height: 40%;
+        background-color: brown;
+       }
+       .childDiv {
+        width:50%;
+        background-color: aqua;
+       }
+
+
+       /* responsiveness*/
+       @media screen and (max-width: 650px) {
+            .flex-container {
+                /* background-color: lightgreen; */
+                display: block;
+            }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div class="containerChilds1">Raju
+                <!-- <div class="childDiv">childDiv</div> -->
+            </div>
+            <div class="containerChilds2">Div2</div>
+            <div class="containerChilds3">Div3</div>
+        </div>
+    </div>
+</body>
+</html>
